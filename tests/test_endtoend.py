@@ -39,7 +39,7 @@ class EndToEndTest(unittest.TestCase):
             self.assertEqual(
                 subprocess.check_output(
                     'run this is a test',
-                    shell=True),
+                    shell=True).decode('utf-8'),
                 'this is a test\n')
 
             # perform an end-to-end test in a subdirectory of the
@@ -50,7 +50,7 @@ class EndToEndTest(unittest.TestCase):
             self.assertEqual(
                 subprocess.check_output(
                     'run this is another test',
-                    shell=True),
+                    shell=True).decode('utf-8'),
                 'this is another test\n')
 
             # perform an end-to-end test in a sub-sub directory of the
@@ -61,5 +61,5 @@ class EndToEndTest(unittest.TestCase):
             self.assertEqual(
                 subprocess.check_output(
                     'run this is another another test',
-                    shell=True),
+                    shell=True).decode('utf-8'),
                 'this is another another test\n')
