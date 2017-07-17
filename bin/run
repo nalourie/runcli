@@ -1,0 +1,21 @@
+#! /usr/bin/env python
+
+"""
+run
+===
+This script implements the ``run`` command from the ``runcli`` package.
+
+See `Link the github repo <https://github.com/nalourie/runcli>`.
+"""
+
+import sys
+
+from runcli.runcli import main
+
+
+if __name__ == '__main__':
+    # parse arguments intended for the Runfile script
+    args = ' '.join(sys.argv[1:])
+
+    # execute the Runfile with args
+    main(args=args)

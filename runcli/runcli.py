@@ -54,11 +54,3 @@ def main(args):
         logger.debug(
             '{cmd} raised:'
             '\n{e}'.format(cmd=cmd, e=e))
-
-
-if __name__ == '__main__':
-    # parse arguments intended for the Runfile script
-    args = ' '.join(sys.argv[1:])
-
-    # execute the Runfile with args
-    main(args=args)
