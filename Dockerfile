@@ -8,7 +8,7 @@
 FROM debian:stable
 
 
-# add system packages, i.e. pip
+# add system packages, i.e. pip and python3
 RUN apt-get clean \
  && apt-get update --fix-missing \
  && apt-get install -y \
@@ -16,6 +16,7 @@ RUN apt-get clean \
       python3 \
       python3-pip
 
-
 # pull in the code base from the context
-ADD . /root
+ADD . /root/runcli
+
+RUN pip install -e /root/runcli
