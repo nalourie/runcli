@@ -7,7 +7,7 @@ Run commands for your repo, easily.
 repository, and then call that file from anywhere in your repo as a
 script using the command ``run``. The rest is up to you!
 
-See `Link the github repo <https://github.com/nalourie/runcli>` for the
+See `the github repo <https://github.com/nalourie/runcli>`_ for the
 source code.
 
 
@@ -45,5 +45,5 @@ That's all there is to it.
 ------------
 Contributing
 ------------
-Pull requests are welcome. All contributions should happen on `Link the
-github repo <https://github.com/nalourie/runcli>`.
+Pull requests are welcome. All contributions should happen on
+`the github repo <https://github.com/nalourie/runcli>`_.
