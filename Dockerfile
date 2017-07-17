@@ -16,6 +16,12 @@ RUN apt-get clean \
       python3 \
       python3-pip
 
+# pip install important python development packages
+RUN pip install --upgrade pip \
+ && pip install \
+      twine \
+      wheel
+
 # pull in the code base from the context
 ADD . /root/runcli
 

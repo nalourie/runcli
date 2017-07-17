@@ -9,3 +9,8 @@
 *.pyc
 *.pyo
 __pycache__
+
+# build and distribution files
+build
+dist
+*.egg-info
