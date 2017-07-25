@@ -35,8 +35,8 @@ def mkenv():
 def exc(args):
     """Execute a command in the development environment.
 
-    :param str args: the arguments to execute in the development
-    environment.
+    :param List[str] args: a list of strings giving the command and
+    arguments to execute in the development environment.
 
     :returns: None.
     """
@@ -48,7 +48,10 @@ def exc(args):
 
 
 def shell():
-    """Open a shell in the development environment's docker container."""
+    """Open a shell in the development environment's docker container.
+
+    :returns: None.
+    """
     mkenv()
 
     subprocess.check_call(
@@ -139,8 +142,6 @@ def main(subcommand, **kwargs):
     """Execute common commands for developing runcli.
 
     :param str subcommand: the subcommand to execute.
-    :param dict kwargs: the key word arguments for the various
-    subcommands.
 
     :returns: None.
     """
